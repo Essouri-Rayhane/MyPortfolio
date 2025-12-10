@@ -297,7 +297,7 @@
                         <div class="project-image-wrapper">
                             <img src="mobiledev.png" alt="Healthcare Advice App" class="project-image">
                             <div class="project-overlay">
-                                <a href="https://github.com/Essouri-Rayhane/Dev_Mobile" target="_blank" class="project-link-overlay">
+                                <a href="https://github.com/Essouri-Rayhane/dev-mobile-Version-2.0" target="_blank" class="project-link-overlay">
                                     <i class="fab fa-github"></i> View Project
                                 </a>
                             </div>
@@ -311,7 +311,7 @@
                             <p class="project-description">
                                 Mobile application providing general health and wellness advice through an intuitive interface.
                             </p>
-                            <a href="https://github.com/Essouri-Rayhane/Dev_Mobile" target="_blank" class="project-link">
+                            <a href="https://github.com/Essouri-Rayhane/dev-mobile-Version-2.0" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i> GitHub Repository
                             </a>
                         </div>
@@ -489,7 +489,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Rayhane Essouri. All rights reserved.</p>
+            <p>&copy; 2025 Rayhane Essouri. All rights reserved, Made with love by Rayhane 🌺 .</p>
         </div>
     </footer>
 
@@ -498,12 +498,26 @@
         <div class="chatbot-window" id="chatbotWindow">
             <div class="chatbot-header">
                 <div class="chatbot-header-content">
-                    <img src="avatar.jpeg" alt="Rayhane" class="chatbot-avatar-header">
-                    <h3>Chat with Rayhane</h3>
+                    <div class="chatbot-avatar-wrapper">
+                        <img src="avatar.jpeg" alt="Rayhane" class="chatbot-avatar-header">
+                        <span class="chatbot-status online"></span>
+                    </div>
+                    <div>
+                        <h3>Chat with Rayhane</h3>
+                        <span class="chatbot-status-text">Online</span>
+                    </div>
                 </div>
-                <button class="chatbot-close" id="chatbotClose">
-                    <i class="fas fa-times"></i>
-                </button>
+                <div class="chatbot-header-actions">
+                    <button class="chatbot-voice" id="chatbotVoice" title="Enable voice assistant">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <button class="chatbot-clear" id="chatbotClear" title="Clear conversation">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <button class="chatbot-close" id="chatbotClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
             </div>
             <div class="chatbot-messages" id="chatbotMessages">
                 <div class="chatbot-message bot-message">
@@ -511,6 +525,15 @@
                         <img src="avatar.jpeg" alt="Rayhane" class="chatbot-avatar-message">
                         <p>Hello! 👋 I'm here to help you learn more about Rayhane. Ask me anything about her skills, projects, or experience!</p>
                     </div>
+                </div>
+            </div>
+            <div class="chatbot-suggestions" id="chatbotSuggestions">
+                <div class="suggestion-title">Suggested questions:</div>
+                <div class="suggestion-buttons">
+                    <button class="suggestion-btn" data-question="What are your skills?">Skills</button>
+                    <button class="suggestion-btn" data-question="Tell me about your projects">Projects</button>
+                    <button class="suggestion-btn" data-question="What is your education?">Education</button>
+                    <button class="suggestion-btn" data-question="How can I contact you?">Contact</button>
                 </div>
             </div>
             <div class="chatbot-input-container">
